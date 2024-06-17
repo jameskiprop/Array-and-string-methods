@@ -1,40 +1,12 @@
-/*switch*/
-var grade = "F";
+let names = ["  Danny, Joe, Tracy, Wendy, Wanjiku"];
 
-switch (grade) {
-  case "A":
-    console.log("You did great!");
-    break;
+let stringNames = names.join(" and ");
 
-  case "B":
-    console.log("You did Good!");
-    break;
+console.log(stringNames);
 
-  case "C":
-    console.log("You did Okay!");
-    break;
+//concat
+let names = ["Danny, Joe, Tracy, Quincy"];
+let names2 = ["Wanjiru , Akinyi"];
 
-  case "D":
-    console.log("You didn't do well!");
-    break;
-
-  case "F":
-    console.log("You FAILED!");
-    break;
-
-  default:
-    console.log("grade is not a letter Grade");
-    break;
-}
-
-/*if (grade == "A") {
-  console.log("You did great!");
-} else if (grade == "B") {
-  console.log("you did good");
-} else if (grade == "C") {
-  console.log("you did okay");
-} else if (grade == "D") {
-  console.log("you did not do that well");
-} else if (grade == "F") {
-  console.log("you FAILED!");
-} */
+let joined = names.concat(names2);
+console.log(joined);
