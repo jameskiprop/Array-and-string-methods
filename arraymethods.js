@@ -1,17 +1,17 @@
-// // 1; //toString()
+// 1; //toString()  When  called on an array, it converts each element to a string and joins them with commas.
 // let names = ["Danny", "Joe", "Tracy", "Wendy", "Wanjiku"];
 
 // let stringNames = names.toString();
-// console.log(stringNames);
+// console.log(stringNames); //output - "Danny, Joe, Tracy, Wendy, Wanjiku"
 
 // // 2; //join
 
 // let names = ["Danny", "Joe", "Tracy", "Wendy", "Wanjiku"];
 
 // let stringNames = names.join(" and ");
-// console.log(stringNames);
+// console.log(stringNames); //output "Danny and Joe and Tracy and...."
 
-// // 3; //concat -combine arrays together
+// // 3; //concat -Used to combine different arrays together
 
 // let names = ["Danny", "Joe", "Tracy", "Wendy", "Wanjiku"];
 // let names2 = ["John", "Tom"];
@@ -25,7 +25,7 @@
 // let names = ["Danny", "Joe", "Tracy", "Wendy", "Wanjiku"];
 // let namesCopy = [...names];
 
-// namesCopy.splice(1, 2, "wanjiru", "Akinyi");
+// namesCopy.splice(1, 2, "Wanjiru", "Akinyi");
 // console.log(namesCopy);
 
 // // 5; //slice - to slice out elements of an array
@@ -43,14 +43,14 @@
 // let index = names.indexOf("Tracy");
 // console.log(index);
 
-// // 7; //lastIndexOf
+// // 7; //lastIndexOf - search for the last occurrence of a specified value in an array and returns the index of the last occurrence of that value.
 
 // let names = ["Danny", "Joe", "Tracy", "Wendy", "Wanjiku", "Tracy"];
 
 // let index = names.lastIndexOf("Tracy");
 // console.log(index);
 
-// // 8; //flat
+// // 8; //flat makes compiler to ignore arrays that is embedded in other arrays.
 // let nums = [1, 2, 3, 4, [5, 6, [7, 8]], 9];
 
 // let flat = nums.flat();
@@ -59,11 +59,11 @@
 // // 9; //forEach -Executes a provided function once for each array element without returning a value.
 // let names = ["Danny", "Joe", "Tracy1", "Wendy", "Wanjiku", "Tracy"];
 
-// for (let i = 1; i < names.length; i += 2) {
+// for (let i = 1; i < names.length; i += 2)
 //   console.log(names[i]);
 // }
 
-// //10 map - Makes a new array by changing each item in an array.
+//10 map - Makes a new array by changing each item in an array.
 
 // let nums = [1, 2, 3, 4, 5, 6];
 
@@ -94,7 +94,7 @@
 // let isGreaterThan5 = nums.some((n) => n > 7);
 // console.log(isGreaterThan5);
 
-// //14 .every() - Checks if all items in an array pass a test.
+//14 .every() - Checks if all items in an array pass a test.
 // let nums = [1, 2, 3, 0, 5, 6, 7];
 
 // let allGreaterThan0 = nums.every((n) => n > 0);
@@ -102,6 +102,7 @@
 // console.log(allGreaterThan0);
 
 // //15 find - Finds the first item in an array that passes a test.
+
 // let stock = [
 //   { item: "ketchup", quantity: 32 },
 //   { item: "mayo", quantity: 9 },
@@ -112,27 +113,7 @@
 // console.log(ketchup.quantity);
 
 // //16 Sort Arranges items in an array in order.
-// let names = ["Sasha", "Denis", "Troy", "Sarah"];
+let names = ["Sasha", "Denis", "Troy", "Sarah"];
 
-// let alph = names.sort();
-// console.log(alph);
-
-const student = {
-  firstName: "John",
-  lastname: "Quincy",
-  age: 24,
-};
-
-function studentGeneration(student) {
-  if (student.age <= 13) {
-    console.log("Gen Alpha");
-  } else if (student.age <= 27) {
-    console.log("gen z");
-  } else if (student.age >= 28) {
-    console.log("Millenial");
-  } else student.age >= 38;
-  {
-    console.log("Boomer");
-  }
-}
-studentGeneration(student);
+let alph = names.sort();
+console.log(alph);
